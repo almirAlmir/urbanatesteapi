@@ -1,0 +1,8 @@
+CREATE TABLE tb_cartao (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    numero_cartao VARCHAR(50) NOT NULL UNIQUE,
+    nome VARCHAR(100) NOT NULL,
+    status BOOLEAN NOT NULL DEFAULT TRUE,
+    tipo VARCHAR(20) NOT NULL,
+    usuario_id BIGINT NOT NULL
+);
