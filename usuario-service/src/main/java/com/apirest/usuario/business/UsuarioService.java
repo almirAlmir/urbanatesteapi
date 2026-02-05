@@ -1,5 +1,6 @@
 package com.apirest.usuario.business;
 
+import com.apirest.usuario.business.dto.UsuarioRecord;
 import com.apirest.usuario.business.dto.UsuarioRequestDto;
 import com.apirest.usuario.business.dto.UsuarioResponseDto;
 import com.apirest.usuario.business.mapstruct.UsuarioMapper;
@@ -29,9 +30,9 @@ public class UsuarioService {
         return mapper.paraUsuarioResponseDto(repository.save(mapper.paraUsuarioEntity(request)));
     }
 
-    public List<UsuarioResponseDto> consultarUsuarios(){
+    public List<UsuarioRecord> consultarUsuarios(){
 
-        return mapper.paraListaUsuarioResponseDto(repository.findAll());
+        return mapper.paraListaUsuarioRecord(repository.findAll());
     }
 
     public UsuarioResponseDto consultarUsuarioPorId(Long id){

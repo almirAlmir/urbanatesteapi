@@ -1,6 +1,7 @@
 package com.apirest.usuario.controller;
 
 import com.apirest.usuario.business.UsuarioService;
+import com.apirest.usuario.business.dto.UsuarioRecord;
 import com.apirest.usuario.business.dto.UsuarioRequestDto;
 import com.apirest.usuario.business.dto.UsuarioResponseDto;
 import org.springframework.http.HttpStatus;
@@ -28,9 +29,9 @@ public class UsuarioController {
     }
 
     @GetMapping
-    public ResponseEntity<List<UsuarioResponseDto>> consultarUsuarios(){
+    public ResponseEntity<List<UsuarioRecord>> consultarUsuarios(){
 
-        List<UsuarioResponseDto> lista_usuarios = service.consultarUsuarios();
+        List<UsuarioRecord> lista_usuarios = service.consultarUsuarios();
 
         return ResponseEntity.status(HttpStatus.OK).body(lista_usuarios);
     }

@@ -1,5 +1,6 @@
 package com.apirest.usuario.business.mapstruct;
 
+import com.apirest.usuario.business.dto.UsuarioRecord;
 import com.apirest.usuario.business.dto.UsuarioRequestDto;
 import com.apirest.usuario.business.dto.UsuarioResponseDto;
 import com.apirest.usuario.infrastructure.entities.UsuarioEntity;
@@ -17,4 +18,8 @@ public interface UsuarioMapper {
     UsuarioResponseDto paraUsuarioResponseDto(UsuarioEntity entity);
 
     List<UsuarioResponseDto> paraListaUsuarioResponseDto(List<UsuarioEntity> list);
+
+    UsuarioRecord paraUsuarioRecord(UsuarioEntity entity);
+
+    List<UsuarioRecord> paraListaUsuarioRecord(List<UsuarioEntity> list);
 }
