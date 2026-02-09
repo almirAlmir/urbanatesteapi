@@ -107,6 +107,9 @@ Acesse a documentação interativa de cada microsserviço individualmente:
 * 📙 **Cartao Service Swagger:**
   [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html)
 
+  ### 3. Via Front-End
+  Acesse https://github.com/almirAlmir/urbanatestevisual e rode o frontend após todas as rotas do backend estarem funcionando corretamente.
+
 ---
 
 ## ✅ Checklist de Requisitos (Status do Projeto)
